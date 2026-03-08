@@ -5,3 +5,6 @@ import numpy as np
 
 # Load YOLOv8 model
 model = YOLO("yolov8n.pt")  # Or your custom model
+
+# Initialize tracker
+tracker = RobustBoxTracker(max_disappeared=30, max_distance=80)
