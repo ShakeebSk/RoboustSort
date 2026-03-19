@@ -14,3 +14,8 @@ cap = cv2.VideoCapture("input.mp4")
 fps = cap.get(cv2.CAP_PROP_FPS)
 w = int(cap.get(cv2.CAP_PROP_FRAME_WIDTH))
 h = int(cap.get(cv2.CAP_PROP_FRAME_HEIGHT))
+
+# Optional video output
+out = cv2.VideoWriter("RobustSort.mp4", cv2.VideoWriter_fourcc(*'mp4v'), fps, (w, h))
+
+frame_num = 0
