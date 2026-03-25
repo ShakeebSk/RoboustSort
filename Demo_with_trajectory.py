@@ -35,3 +35,7 @@ while True:
     objects = tracker.update(rects, frame_number=frame_num)
     trajectories = tracker.get_trajectories()
   
+    for obj_id, points in trajectories.items():
+        for i in range(1, len(points)):
+            cv2.line(frame, points[i-1], points[i], (255, 0, 0), 2)
+        cv2.circle(frame, points[-1], 4, (0, 0, 255), -1)  # centroid dot
