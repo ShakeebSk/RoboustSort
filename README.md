@@ -9,3 +9,12 @@ Trajectory Tracking: Optional trajectory visualization to track object movement 
 No Deep Learning for Tracking: Only uses geometric features for the actual tracking algorithm
 Minimal Dependencies: Core algorithm only requires NumPy
 Configurable Parameters: Easily tune the algorithm for your specific use case
+
+# How It's Better Than SORT
+RobustSort improves upon the original SORT (Simple Online Realtime Tracking) algorithm in several ways:
+
+No Kalman Filter: Operates without complex motion prediction, making it more robust to erratic movements
+Multi-feature Matching: Uses not just position but also area and aspect ratio for more robust tracking
+Re-identification: Can remember and re-identify objects that temporarily disappear
+Configurable Weights: Easily adjust which features matter more for your specific use case
+Trajectory Visualization: Built-in support for visualizing object paths
