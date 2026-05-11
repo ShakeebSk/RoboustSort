@@ -18,3 +18,9 @@ Multi-feature Matching: Uses not just position but also area and aspect ratio fo
 Re-identification: Can remember and re-identify objects that temporarily disappear
 Configurable Weights: Easily adjust which features matter more for your specific use case
 Trajectory Visualization: Built-in support for visualizing object paths
+
+# Installation
+No installation required! Just include the tracker files in your project.
+
+git clone https://github.com/ShakeebSk/RobustSort.git
+cd RobustSort
